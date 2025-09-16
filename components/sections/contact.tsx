@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, MapPin, Phone, Github, Linkedin, Send } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -10,6 +11,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 
 const Contact = () => {
+  const { t } = useTranslation();
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -33,7 +36,7 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <Mail className="h-5 w-5" />,
-      label: 'Email',
+      label: t('contact.info.email'),
       value: 'donaldalphonso11@gmail.com',
       href: 'mailto:donaldalphonso11@gmail.com',
     },
@@ -45,7 +48,7 @@ const Contact = () => {
     },
     {
       icon: <MapPin className="h-5 w-5" />,
-      label: 'Location',
+      label: t('contact.info.location'),
       value: 'Cotonou, Benin',
       href: '#',
     },
@@ -79,10 +82,9 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('contact.title')}</h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, 
-            or just having a chat about backend development.
+            {t('contact.subtitle')}
           </p>
         </motion.div>
 
@@ -98,24 +100,24 @@ const Contact = () => {
           >
             <Card>
               <CardHeader>
-                <CardTitle>Send me a message</CardTitle>
+                <CardTitle>{t('contact.form.send')}</CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="name">Name</Label>
+                      <Label htmlFor="name">{t('contact.form.name')}</Label>
                       <Input
                         id="name"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        placeholder="Your name"
+                        placeholder={t('contact.form.name')}
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
+                      <Label htmlFor="email">{t('contact.form.email')}</Label>
                       <Input
                         id="email"
                         name="email"
@@ -128,7 +130,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
+                    <Label htmlFor="message">{t('contact.form.message')}</Label>
                     <Textarea
                       id="message"
                       name="message"
@@ -136,12 +138,12 @@ const Contact = () => {
                       onChange={handleChange}
                       required
                       rows={5}
-                      placeholder="Tell me about your project or just say hello..."
+                      placeholder={t('contact.form.message')}
                     />
                   </div>
                   <Button type="submit" className="w-full sm:w-auto">
                     <Send className="h-4 w-4 mr-2" />
-                    Send Message
+                    {t('contact.form.send')}
                   </Button>
                 </form>
               </CardContent>

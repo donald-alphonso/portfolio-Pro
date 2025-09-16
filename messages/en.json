@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Donald AHOSSI",
+    "title": "Backend Developer",
+    "description": "I specialize in building robust, scalable backend systems that power modern applications. With expertise in data synchronization and system integration, I create solutions that drive business success.",
+    "cta": "Get In Touch",
+    "viewWork": "View My Work",
+    "scrollDown": "Scroll to learn more"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "I'm a passionate backend developer specializing in data synchronization and system integration, building robust solutions that power modern applications.",
+    "myStory": "My Story",
+    "story1": "My journey into backend development began during my IT and Telecommunications Engineering studies at UCAO-UUC, where I discovered my passion for building robust systems and infrastructure that power modern applications.",
+    "story2": "I specialize in backend technologies including PHP, Python, Node.js, and database systems, with a focus on creating efficient, maintainable, and scalable solutions. I enjoy tackling complex data synchronization challenges and ensuring system reliability.",
+    "story3": "Currently working at HIGHFIVE UNIVERSITY, I develop data synchronization features across multiple databases and collaborate with teams to deliver high-quality software solutions. When I'm not coding, you'll find me exploring new technologies and continuously expanding my skills through certifications and learning.",
+    "journeyHighlights": "Journey Highlights",
+    "certificationsLearning": "Certifications & Learning"
+  },
+  "timeline": {
+    "softwareDeveloper": {
+      "title": "Software Developer",
+      "company": "HIGHFIVE UNIVERSITY",
+      "period": "2022 - PRESENT",
+      "description": "Developed data synchronization features using PHP and Python for multiple databases based on project-specific needs. Collaborated with the team to ensure the quality and reliability of the implemented features."
+    },
+    "bachelor": {
+      "title": "Bachelor in Telecommunications and Computer Engineering",
+      "company": "UCAO-UUC",
+      "period": "JUL 2020",
+      "description": "Graduated with a Bachelor's degree in Telecommunications and Computer Engineering, focusing on software development and telecommunications systems."
+    }
+  },
+  "certifications": {
+    "prodevBackend": {
+      "title": "ProDev Backend",
+      "issuer": "ALX Africa",
+      "date": "2025",
+      "description": "Advanced backend development program focusing on scalable architecture, system monitoring, and API optimization techniques."
+    },
+    "softwareDeveloperCert": {
+      "title": "Software Developer Certification",
+      "issuer": "HIGHFIVE UNIVERSITY",
+      "date": "2025",
+      "description": "Internal certification program covering full-stack development, database design, and enterprise software architecture."
+    },
+    "professionalFoundations": {
+      "title": "Professional Foundations",
+      "issuer": "ALX Africa",
+      "date": "2025",
+      "description": "Leadership program focused on building ethical and impactful professionals equipped to tackle complex business challenges."
+    },
+    "aiCareerEssentials": {
+      "title": "AI Career Essentials",
+      "issuer": "ALX Africa",
+      "date": "2024",
+      "description": "Certification in AI-augmented professional development skills for the digital workplace and emerging technologies."
+    }
+  },
+  "skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "A comprehensive toolkit built through years of hands-on experience and continuous learning in backend development.",
+    "categories": {
+      "backend": "Backend Technologies",
+      "databases": "Databases",
+      "cloud": "Cloud & DevOps",
+      "tools": "Development Tools",
+      "security": "Security & Auth",
+      "architecture": "Architecture & Patterns"
+    },
+    "alwaysLearning": {
+      "title": "Always Learning",
+      "description": "I'm constantly exploring new technologies and staying up-to-date with the latest trends in backend development, cloud computing, and software architecture."
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A showcase of backend systems I've built, from APIs and microservices to real-time applications and data processing systems.",
+    "viewMore": "View More on GitHub",
+    "buttons": {
+      "code": "Code",
+      "demo": "Demo"
+    },
+    "items": {
+      "socialMediaApi": {
+        "title": "Social Media API",
+        "description": "A comprehensive social media backend API showcasing advanced development skills: GraphQL implementation for flexible data querying, asynchronous task processing with Celery, scalable system design with microservices architecture, robust data persistence with PostgreSQL, and Redis for caching and performance optimization."
+      },
+      "travelApp": {
+        "title": "Travel App",
+        "description": "A feature-rich travel application built with Django: RESTful API with comprehensive Swagger documentation, containerized with Docker for easy deployment, background task processing with Celery and RabbitMQ, relational database design with MySQL, and user authentication and authorization system."
+      },
+      "ngoWebsite": {
+        "title": "God's Hand - NGO Showcase Website",
+        "description": "A modern showcase website for the NGO 'God's Hand': fully responsive with dark/light mode support, smooth animations and reusable UI components, multilingual support (French/English) with dynamic switching, backend API for managing site content, includes mission presentation, gallery, testimonials, and blog, social media integration with floating action buttons."
+      },
+      "authifyApi": {
+        "title": "Authify API - Secure Authentication Service",
+        "description": "A robust REST API for authentication and user management: full JWT authentication with signup, login, and profile management, refresh token support for enhanced security, password management with secure hashing, clean architecture (controllers, services, models), centralized error handling with consistent responses, comprehensive logging system (Winston and Morgan)."
+      },
+      "weatherApi": {
+        "title": "Mini Weather API - PHP MVC Project",
+        "description": "A lightweight weather API built with PHP: get current weather data for any city, multi-day forecast functionality, clean MVC architecture for maintainability, response caching to reduce external API calls, easy deployment on various hosting platforms."
+      },
+      "urlShortener": {
+        "title": "URL Shortener - Node.js Project",
+        "description": "A simple but effective URL shortening service: generates short links for long URLs, RESTful API design principles, expandable to use persistent databases, clean and minimal codebase, optimized for performance."
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about backend development.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Tell me about your project or just say hello...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "email": "Email",
+      "location": "Location",
+      "availability": "Availability"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js and Tailwind CSS"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry"
+  }
+}

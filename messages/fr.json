@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Salut, je suis",
+    "name": "Donald AHOSSI",
+    "title": "Développeur Backend",
+    "description": "Je me spécialise dans la création de systèmes backend robustes et évolutifs qui alimentent les applications modernes. Avec une expertise en synchronisation de données et intégration de systèmes, je crée des solutions qui favorisent le succès commercial.",
+    "cta": "Me Contacter",
+    "viewWork": "Voir Mon Travail",
+    "scrollDown": "Faites défiler pour en savoir plus"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "subtitle": "Je suis un développeur backend passionné spécialisé dans la synchronisation de données et l'intégration de systèmes, créant des solutions robustes qui alimentent les applications modernes.",
+    "myStory": "Mon Histoire",
+    "story1": "Mon parcours dans le développement backend a commencé pendant mes études d'Ingénierie en Télécommunications et Informatique à l'UCAO-UUC, où j'ai découvert ma passion pour la construction de systèmes robustes et d'infrastructures qui alimentent les applications modernes.",
+    "story2": "Je me spécialise dans les technologies backend incluant PHP, Python, Node.js, et les systèmes de bases de données, avec un focus sur la création de solutions efficaces, maintenables et évolutives. J'aime relever les défis complexes de synchronisation de données et assurer la fiabilité des systèmes.",
+    "story3": "Travaillant actuellement chez HIGHFIVE UNIVERSITY, je développe des fonctionnalités de synchronisation de données à travers plusieurs bases de données et collabore avec les équipes pour livrer des solutions logicielles de haute qualité. Quand je ne code pas, vous me trouverez en train d'explorer de nouvelles technologies et d'élargir continuellement mes compétences à travers des certifications et l'apprentissage.",
+    "journeyHighlights": "Points Forts du Parcours",
+    "certificationsLearning": "Certifications et Apprentissage"
+  },
+  "timeline": {
+    "softwareDeveloper": {
+      "title": "Développeur Logiciel",
+      "company": "HIGHFIVE UNIVERSITY",
+      "period": "2022 - PRÉSENT",
+      "description": "Développement de fonctionnalités de synchronisation de données utilisant PHP et Python pour plusieurs bases de données selon les besoins spécifiques des projets. Collaboration avec l'équipe pour assurer la qualité et la fiabilité des fonctionnalités implémentées."
+    },
+    "bachelor": {
+      "title": "Licence en Génie Télécommunications et Informatique",
+      "company": "UCAO-UUC",
+      "period": "JUIL 2020",
+      "description": "Diplômé avec une Licence en Génie Télécommunications et Informatique, avec un focus sur le développement logiciel et les systèmes de télécommunications."
+    }
+  },
+  "certifications": {
+    "prodevBackend": {
+      "title": "ProDev Backend",
+      "issuer": "ALX Africa",
+      "date": "2025",
+      "description": "Programme avancé de développement backend axé sur l'architecture évolutive, la surveillance des systèmes et les techniques d'optimisation d'API."
+    },
+    "softwareDeveloperCert": {
+      "title": "Certification Développeur Logiciel",
+      "issuer": "HIGHFIVE UNIVERSITY",
+      "date": "2025",
+      "description": "Programme de certification interne couvrant le développement full-stack, la conception de bases de données et l'architecture logicielle d'entreprise."
+    },
+    "professionalFoundations": {
+      "title": "Fondations Professionnelles",
+      "issuer": "ALX Africa",
+      "date": "2025",
+      "description": "Programme de leadership axé sur la formation de professionnels éthiques et impactants équipés pour relever les défis commerciaux complexes."
+    },
+    "aiCareerEssentials": {
+      "title": "Essentiels de Carrière IA",
+      "issuer": "ALX Africa",
+      "date": "2024",
+      "description": "Certification en compétences de développement professionnel augmentées par l'IA pour le lieu de travail numérique et les technologies émergentes."
+    }
+  },
+  "skills": {
+    "title": "Compétences et Technologies",
+    "subtitle": "Une boîte à outils complète construite à travers des années d'expérience pratique et d'apprentissage continu en développement backend.",
+    "categories": {
+      "backend": "Technologies Backend",
+      "databases": "Bases de Données",
+      "cloud": "Cloud et DevOps",
+      "tools": "Outils de Développement",
+      "security": "Sécurité et Authentification",
+      "architecture": "Architecture et Patterns"
+    },
+    "alwaysLearning": {
+      "title": "Toujours en Apprentissage",
+      "description": "J'explore constamment de nouvelles technologies et reste à jour avec les dernières tendances en développement backend, cloud computing et architecture logicielle."
+    }
+  },
+  "projects": {
+    "title": "Projets Phares",
+    "subtitle": "Une vitrine des systèmes backend que j'ai construits, des APIs et microservices aux applications temps réel et systèmes de traitement de données.",
+    "viewMore": "Voir Plus sur GitHub",
+    "buttons": {
+      "code": "Code",
+      "demo": "Démo"
+    },
+    "items": {
+      "socialMediaApi": {
+        "title": "API Réseau Social",
+        "description": "Une API backend complète pour réseau social démontrant des compétences avancées de développement : implémentation GraphQL pour des requêtes de données flexibles, traitement de tâches asynchrones avec Celery, conception de système évolutif avec architecture microservices, persistance de données robuste avec PostgreSQL, et Redis pour la mise en cache et l'optimisation des performances."
+      },
+      "travelApp": {
+        "title": "Application de Voyage",
+        "description": "Une application de voyage riche en fonctionnalités construite avec Django : API RESTful avec documentation Swagger complète, conteneurisée avec Docker pour un déploiement facile, traitement de tâches en arrière-plan avec Celery et RabbitMQ, conception de base de données relationnelle avec MySQL, et système d'authentification et d'autorisation utilisateur."
+      },
+      "ngoWebsite": {
+        "title": "God's Hand - Site Vitrine ONG",
+        "description": "Un site vitrine moderne pour l'ONG 'God's Hand' : entièrement responsive avec support mode sombre/clair, animations fluides et composants UI réutilisables, support multilingue (Français/Anglais) avec commutation dynamique, API backend pour gérer le contenu du site, inclut présentation de mission, galerie, témoignages et blog, intégration réseaux sociaux avec boutons d'action flottants."
+      },
+      "authifyApi": {
+        "title": "Authify API - Service d'Authentification Sécurisé",
+        "description": "Une API REST robuste pour l'authentification et la gestion des utilisateurs : authentification JWT complète avec inscription, connexion et gestion de profil, support de token de rafraîchissement pour une sécurité renforcée, gestion de mots de passe avec hachage sécurisé, architecture propre (contrôleurs, services, modèles), gestion d'erreurs centralisée avec réponses cohérentes, système de journalisation complet (Winston et Morgan)."
+      },
+      "weatherApi": {
+        "title": "Mini API Météo - Projet PHP MVC",
+        "description": "Une API météo légère construite avec PHP : obtenir des données météo actuelles pour n'importe quelle ville, fonctionnalité de prévisions multi-jours, architecture MVC propre pour la maintenabilité, mise en cache des réponses pour réduire les appels API externes, déploiement facile sur diverses plateformes d'hébergement."
+      },
+      "urlShortener": {
+        "title": "Raccourcisseur d'URL - Projet Node.js",
+        "description": "Un service de raccourcissement d'URL simple mais efficace : génère des liens courts pour les URLs longues, principes de conception d'API RESTful, extensible pour utiliser des bases de données persistantes, base de code propre et minimale, optimisé pour les performances."
+      }
+    }
+  },
+  "contact": {
+    "title": "Entrer en Contact",
+    "subtitle": "Je suis toujours ouvert à discuter de nouvelles opportunités, de projets intéressants, ou simplement à échanger sur le développement backend.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Sujet",
+      "message": "Parlez-moi de votre projet ou dites simplement bonjour...",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Échec de l'envoi du message. Veuillez réessayer."
+    },
+    "info": {
+      "email": "Email",
+      "location": "Localisation",
+      "availability": "Disponibilité"
+    }
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "builtWith": "Construit avec Next.js et Tailwind CSS"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "retry": "Réessayer"
+  }
+}

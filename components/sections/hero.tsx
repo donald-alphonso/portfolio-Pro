@@ -2,9 +2,12 @@
 
 import { motion } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
+  const { t } = useTranslation();
+  
   const scrollToAbout = () => {
     document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -30,9 +33,9 @@ const Hero = () => {
               transition={{ delay: 0.2 }}
               className="text-4xl md:text-6xl font-bold"
             >
-              Hi, I'm{' '}
+              {t('hero.greeting')}{' '}
               <span className="bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-                Donald AHOSSI
+                {t('hero.name')}
               </span>
             </motion.h1>
 
@@ -42,7 +45,7 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-xl md:text-2xl text-muted-foreground"
             >
-              Backend Developer
+              {t('hero.title')}
             </motion.h2>
 
             <motion.p
@@ -51,8 +54,7 @@ const Hero = () => {
               transition={{ delay: 0.6 }}
               className="text-lg text-muted-foreground max-w-xl"
             >
-              I build robust, scalable backend systems and APIs that power modern web applications. 
-              Passionate about clean code, performance optimization, and solving complex problems.
+              {t('hero.description')}
             </motion.p>
 
             <motion.div
@@ -62,7 +64,7 @@ const Hero = () => {
               className="flex flex-wrap gap-4"
             >
               <Button size="lg" onClick={scrollToAbout}>
-                View My Work
+                {t('hero.viewWork')}
                 <ArrowDown className="ml-2 h-4 w-4" />
               </Button>
               

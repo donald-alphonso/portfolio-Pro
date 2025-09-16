@@ -4,23 +4,26 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { useTheme } from 'next-themes';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
+import LanguageSwitcher from '@/components/language-switcher';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+  const { t } = useTranslation();
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Contact', href: '#contact' },
+    { name: t('nav.home'), href: '#home' },
+    { name: t('nav.about'), href: '#about' },
+    { name: t('nav.skills'), href: '#skills' },
+    { name: t('nav.projects'), href: '#projects' },
+    { name: t('nav.contact'), href: '#contact' },
   ];
 
   const scrollToSection = (href: string) => {
@@ -45,7 +48,7 @@ const Navigation = () => {
             transition={{ delay: 0.2 }}
             className="text-xl font-bold"
           >
-            Donald AHOSSI
+            Donald Alphonso AHOSSI
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -62,17 +65,21 @@ const Navigation = () => {
                 {item.name}
               </motion.button>
             ))}
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            >
-              {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
+            <div className="flex items-center space-x-2">
+              <LanguageSwitcher />
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              >
+                {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              </Button>
+            </div>
           </div>
 
           {/* Mobile Navigation */}
           <div className="md:hidden flex items-center space-x-2">
+            <LanguageSwitcher />
             <Button
               variant="ghost"
               size="icon"

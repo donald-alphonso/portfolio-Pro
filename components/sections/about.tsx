@@ -2,51 +2,54 @@
 
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, GraduationCap, Award, Briefcase } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 
 const About = () => {
+  const { t } = useTranslation();
+  
   const timeline = [
     {
-      year: '2022 - PRESENT',
-      title: 'Software Developer',
-      company: 'HIGHFIVE UNIVERSITY',
-      description: 'Developed data synchronization features using PHP and Python for multiple databases based on project-specific needs. Collaborated with the team to ensure the quality and reliability of the implemented features.',
+      year: t('timeline.softwareDeveloper.period'),
+      title: t('timeline.softwareDeveloper.title'),
+      company: t('timeline.softwareDeveloper.company'),
+      description: t('timeline.softwareDeveloper.description'),
       icon: <Briefcase className="h-4 w-4" />,
     },
     {
-      year: 'JUL 2020',
-      title: 'Bachelor in Telecommunications and Computer Engineering',
-      company: 'UCAO-UUC',
-      description: "Graduated with a Bachelor's degree in Telecommunications and Computer Engineering, focusing on software development and telecommunications systems.",
+      year: t('timeline.bachelor.period'),
+      title: t('timeline.bachelor.title'),
+      company: t('timeline.bachelor.company'),
+      description: t('timeline.bachelor.description'),
       icon: <GraduationCap className="h-4 w-4" />,
     },
   ];
   
   const certifications = [
     {
-      title: 'ProDev Backend',
-      issuer: 'ALX Africa',
-      date: '2025',
-      description: 'Advanced backend development program focusing on scalable architecture, system monitoring, and API optimization techniques.',
+      title: t('certifications.prodevBackend.title'),
+      issuer: t('certifications.prodevBackend.issuer'),
+      date: t('certifications.prodevBackend.date'),
+      description: t('certifications.prodevBackend.description'),
     },
     {
-      title: 'Software Developer Certification',
-      issuer: 'HIGHFIVE UNIVERSITY',
-      date: '2025',
-      description: 'Internal certification program covering full-stack development, database design, and enterprise software architecture.',
+      title: t('certifications.softwareDeveloperCert.title'),
+      issuer: t('certifications.softwareDeveloperCert.issuer'),
+      date: t('certifications.softwareDeveloperCert.date'),
+      description: t('certifications.softwareDeveloperCert.description'),
     },
     {
-      title: 'Professional Foundations',
-      issuer: 'ALX Africa',
-      date: '2025',
-      description: 'Leadership program focused on building ethical and impactful professionals equipped to tackle complex business challenges.',
+      title: t('certifications.professionalFoundations.title'),
+      issuer: t('certifications.professionalFoundations.issuer'),
+      date: t('certifications.professionalFoundations.date'),
+      description: t('certifications.professionalFoundations.description'),
     },
     {
-      title: 'AI Career Essentials',
-      issuer: 'ALX Africa',
-      date: '2024',
-      description: 'Certification in AI-augmented professional development skills for the digital workplace and emerging technologies.',
+      title: t('certifications.aiCareerEssentials.title'),
+      issuer: t('certifications.aiCareerEssentials.issuer'),
+      date: t('certifications.aiCareerEssentials.date'),
+      description: t('certifications.aiCareerEssentials.description'),
     },
   ];
 
@@ -60,10 +63,9 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('about.title')}</h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            I&apos;m a passionate backend developer specializing in data synchronization and system integration,
-            building robust solutions that power modern applications.
+            {t('about.subtitle')}
           </p>
         </motion.div>
 
@@ -77,21 +79,16 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-2xl font-semibold mb-4">My Story</h3>
+            <h3 className="text-2xl font-semibold mb-4">{t('about.myStory')}</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                My journey into backend development began during my IT and Telecommunications Engineering studies at UCAO-UUC, 
-                where I discovered my passion for building robust systems and infrastructure that power modern applications.
+                {t('about.story1')}
               </p>
               <p>
-                I specialize in backend technologies including PHP, Python, Node.js, and database systems, with a focus on 
-                creating efficient, maintainable, and scalable solutions. I enjoy tackling complex data synchronization 
-                challenges and ensuring system reliability.
+                {t('about.story2')}
               </p>
               <p>
-                Currently working at HIGHFIVE UNIVERSITY, I develop data synchronization features across multiple databases 
-                and collaborate with teams to deliver high-quality software solutions. When I&apos;m not coding, you&apos;ll find me 
-                exploring new technologies and continuously expanding my skills through certifications and learning.
+                {t('about.story3')}
               </p>
             </div>
           </motion.div>
@@ -104,7 +101,7 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-semibold mb-6">Journey Highlights</h3>
+              <h3 className="text-2xl font-semibold mb-6">{t('about.journeyHighlights')}</h3>
               <div className="space-y-4">
                 {timeline.map((item, index) => (
                   <motion.div
@@ -146,7 +143,7 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-semibold mb-6">Certifications & Learning</h3>
+              <h3 className="text-2xl font-semibold mb-6">{t('about.certificationsLearning')}</h3>
               <div className="space-y-4">
                 {certifications.map((cert, index) => (
                   <motion.div

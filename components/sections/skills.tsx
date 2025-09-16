@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { 
@@ -13,18 +14,20 @@ import {
 } from 'lucide-react';
 
 const Skills = () => {
+  const { t } = useTranslation();
+  
   const skillCategories = [
     {
-      title: 'Backend Technologies',
+      title: t('skills.categories.backend'),
       icon: <Server className="h-6 w-6" />,
       skills: [
-        'Node.js', 'Express.js', 'NestJS', 'Python', 'Php', 
+        'Node.js', 'Express.js', 'NestJS', 'Python', 'PHP', 
         'TypeScript', 'JavaScript', 'REST APIs', 'GraphQL'
       ],
       color: 'bg-blue-500/10 text-blue-700 dark:text-blue-300',
     },
     {
-      title: 'Databases',
+      title: t('skills.categories.databases'),
       icon: <Database className="h-6 w-6" />,
       skills: [
         'MongoDB', 'PostgreSQL', 'MySQL', 'SQLite', 'Database Design'
@@ -32,7 +35,7 @@ const Skills = () => {
       color: 'bg-green-500/10 text-green-700 dark:text-green-300',
     },
     {
-      title: 'Cloud & DevOps',
+      title: t('skills.categories.cloud'),
       icon: <Cloud className="h-6 w-6" />,
       skills: [
         'Docker', 'CI/CD', 'Linux', 'Nginx', 'Monitoring', 'Deployment'
@@ -40,7 +43,7 @@ const Skills = () => {
       color: 'bg-purple-500/10 text-purple-700 dark:text-purple-300',
     },
     {
-      title: 'Development Tools',
+      title: t('skills.categories.tools'),
       icon: <Code className="h-6 w-6" />,
       skills: [
         'Git', 'VS Code', 'Postman', 'Jest', 
@@ -49,7 +52,7 @@ const Skills = () => {
       color: 'bg-orange-500/10 text-orange-700 dark:text-orange-300',
     },
     {
-      title: 'Security & Auth',
+      title: t('skills.categories.security'),
       icon: <Shield className="h-6 w-6" />,
       skills: [
         'JWT', 'OAuth2', 'Passport.js', 'bcrypt', 
@@ -58,7 +61,7 @@ const Skills = () => {
       color: 'bg-red-500/10 text-red-700 dark:text-red-300',
     },
     {
-      title: 'Architecture & Patterns',
+      title: t('skills.categories.architecture'),
       icon: <Wrench className="h-6 w-6" />,
       skills: [
         'Microservices', 'MVC', 'Clean Architecture', 'SOLID', 
@@ -78,10 +81,9 @@ const Skills = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Skills & Technologies</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('skills.title')}</h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            A comprehensive toolkit built through years of hands-on experience 
-            and continuous learning in backend development.
+            {t('skills.subtitle')}
           </p>
         </motion.div>
 
@@ -145,10 +147,9 @@ const Skills = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <h3 className="text-2xl font-semibold mb-6">Always Learning</h3>
+          <h3 className="text-2xl font-semibold mb-6">{t('skills.alwaysLearning.title')}</h3>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            I'm constantly exploring new technologies and staying up-to-date with the latest 
-            trends in backend development, cloud computing, and software architecture.
+            {t('skills.alwaysLearning.description')}
           </p>
           
           <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
