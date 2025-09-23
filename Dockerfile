@@ -7,7 +7,7 @@ RUN npm ci
 
 COPY . .
 
-RUN npm run builder
+RUN npm run build
 FROM node:20.18.1-alpine AS runner
 
 WORKDIR /app
