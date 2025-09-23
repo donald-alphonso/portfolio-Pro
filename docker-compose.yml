@@ -3,7 +3,7 @@ services:
     build:
       context: .
     restart: always
-    env_fle:
+    env_file:
       - .env
     deploy:
       resources:
