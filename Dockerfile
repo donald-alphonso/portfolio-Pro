@@ -12,15 +12,18 @@ FROM node:20.18.1-alpine AS runner
 
 WORKDIR /app
 
+RUN npm install -g serve
+
 ENV NODE_ENV=production
 ENV PORT=3000
 
+COPY --from=builder /app/out ./out
 # COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package*.json ./
-COPY --from=builder /app/next.config.js ./next.config.js
+# COPY --from=builder /app/.next ./.next
+# COPY --from=builder /app/node_modules ./node_modules
+# COPY --from=builder /app/package*.json ./
+# COPY --from=builder /app/next.config.js ./next.config.js
 
-EXPOSE 3000
+EXPOSE $PORT
 
-CMD ["npm", "run", "start"]
+CMD ["sh", "-c", "serve -s out -l $PORT"]
